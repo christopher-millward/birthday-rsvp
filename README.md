@@ -7,9 +7,9 @@ This was a very quick, effortless build intended to be a single-use tool. If you
 
 ## Specifics
 ### Front-end
--Single-page UI with swiper cards for navigation.
+-Single-page UI with swiper cards for navigation.  
 -optimized for mobile phone only. Looks like absolute garbage on [desktop or tablet] and is unusable. This was considered fine for my use-case.
 
 ### Back-end
--Routed this to a Google Sheet for super simple viewing of my guestlist. I am aware this is not a real DB.
--Did not create server to serve API key. I am aware this is a security risk, but again, absolutely no risk associated with this use case.
+-Routed this to a Google Sheet for super simple viewing of my guestlist. I am aware this is not a real DB.  
+-Did not create server to serve API key. Just tossed it in a .env and called it a day.

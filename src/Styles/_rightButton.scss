@@ -6,7 +6,7 @@
     z-index:10;
     position:fixed;
     right:0px;
-    top:65vh;
+    top:65dvh;
     transform: rotate(180deg);
     filter:invert(100%) drop-shadow(0px 0px 10px $appDarkBlue);
 }
@@ -17,7 +17,7 @@
     z-index:10;
     position:fixed;
     left:0px;
-    top:65vh;
+    top:65dvh;
     transform: rotate(0deg);
     filter:invert(100%) drop-shadow(0px 0px 10px $appDarkBlue);
 }

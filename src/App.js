@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import {register} from 'swiper/element/bundle';
+import Details from "./components/Details";
+import Overview from "./components/Overview";
+import LeftButton from "./components/LeftButton";
+import RightButton from "./components/RightButton";
+import RSVP from "./components/RSVP";
+import './Styles/app.scss';
+import ThankYou from "./components/ThankYou";
 
 function App() {
+//register swiper
+register();
+
+const [rsvpShowing, setRsvpShowing]= useState(false)
+const [thankyouShowing, setThankyouShowing]=useState({showing:false, status:null})
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <swiper-container loop='false' speed='200' navigation='false' pagination='true' keyboard='true'>
+        <swiper-slide>
+          <Overview setRsvpShowing={setRsvpShowing}/>
+        </swiper-slide>
+        <swiper-slide>
+          <Details/>
+        </swiper-slide>
+      </swiper-container>
+
+      <RightButton/>
+      <LeftButton/>
+
+      {rsvpShowing===true?<RSVP setRsvpShowing={setRsvpShowing} setThankyouShowing={setThankyouShowing}/>:null};
+
+      {thankyouShowing.showing===true?<ThankYou status={thankyouShowing.status}/>:null}
+
     </div>
   );
 }

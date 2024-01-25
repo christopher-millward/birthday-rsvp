@@ -1,0 +1,51 @@
+@import './appVariables.scss';
+
+#detailsTitle{
+    color:#fe5714;
+    text-shadow: 2px 2px 20px #02849b45;
+}
+#detailsContainer{
+    font-family: playfair;
+    background-color: #ECFAFD;
+    height:100vh;
+    width:100vw;
+}
+
+.sectionTitle{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width:96vw;
+    padding-bottom:1px;
+    border-bottom: solid 1px #02849b;
+    color: #02849b;
+}
+
+.sectionBody{
+    padding-top:5px;
+}
+
+.detailsInfoSection{
+    height:300px;
+    width:98vw;
+}
+
+#detailsInfo{
+    display:flex;
+    justify-content: center;
+    font-size:15px;
+    line-height: 17px;
+    width:100vw;
+
+    padding-left:1vw;
+    padding-right:1vw;
+    overflow: hidden;
+    position:fixed;
+    z-index:10;
+}
+
+#detailsImg{
+    width:100vw;
+    position:fixed;
+    bottom:0px;
+}

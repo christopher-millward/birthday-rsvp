@@ -1,0 +1,74 @@
+@import './appVariables.scss';
+
+#overviewContainer{
+    background-color: $appLightBlue;
+    height:100vh;
+}
+
+
+.overviewText{
+    font-family: 'broadway';
+    font-size: 50px;
+    text-shadow: 2px 2px 20px $appDarkBlue;
+    color:$appRed;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding:10px;
+}
+#OVtitle2{
+    font-size: 30px;
+    align-self: center;
+}
+
+#OVhorBar{
+    width:50vw;
+    height:1px;
+    border-bottom: solid black 1px;
+    padding:5px;
+}
+
+#OVdate{
+    font-family: playfair;
+    font-size: 15px;
+    color:black;
+
+    padding-top:15px;
+}
+@import './appVariables.scss';
+
+.overviewButton{
+    width:33vw;
+    height:50px;
+    z-index:10;
+
+    background-color: rgba(230, 230, 230, 0.8);
+
+    font-family: playfair;
+    font-size: 22px;
+    border:none;
+    border-radius:3px;
+    box-shadow: 1px 1px 30px $appDarkBlue;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    left:33vw;
+}
+
+#detailsButton{
+    position:fixed;
+    top:40vh;
+}
+#RSVPButton{
+    position:fixed;
+    top:50vh;
+}
+.skiiImage{
+    width:100vw;
+    position:fixed;
+    bottom:0px;
+}

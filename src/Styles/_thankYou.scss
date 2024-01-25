@@ -1,0 +1,70 @@
+.thankYouContainer{
+    min-height:30vh;
+    width:90vw;
+
+    position:fixed;
+    top:23vh;
+    left:5vw;
+
+    background-color: #9dd0fdef;
+    border-radius: 10px;
+    z-index:102;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+    font-family: playfair;
+    font-size: 20px;
+    font-weight: 500;
+
+    animation: fadeThankyou 4s forwards;
+
+}
+
+@keyframes fadeThankyou{
+    0%{
+        opacity:100%
+    }
+
+    75%{
+        opacity:100%
+    }
+
+    100%{
+        opacity:0%
+    }
+}
+
+#tyCont1{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#goodbye{
+    font-size: 15px;
+    padding:10px;
+    text-align: center;
+}
+
+#ThankyouBlocker{
+    animation: fadeBlocker 4s forwards;
+}
+
+@keyframes fadeBlocker{
+    0%{
+        backdrop-filter: blur(0px) brightness(60%);
+    }
+
+    75%{
+        backdrop-filter: blur(0px) brightness(60%);
+    }
+
+    100%{
+        backdrop-filter: blur(0px) brightness(100%);
+    }
+}

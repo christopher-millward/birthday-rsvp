@@ -1,0 +1,16 @@
+.blocker{
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    backdrop-filter: blur(5px) brightness(60%);
+    overflow:hidden;
+
+    z-index:100;
+
+}
+
+body{
+    overflow:hidden;
+}

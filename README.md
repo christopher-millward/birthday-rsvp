@@ -12,4 +12,4 @@ This was a very quick, effortless build intended to be a single-use tool. If you
 
 ### Back-end
 -Routed this to a Google Sheet for super simple viewing of my guestlist. I am aware this is not a real DB.  
--Did not create server to serve API key. I am aware this is a security risk, but again, absolutely no risk associated with this use case.
+-Did not create server to serve API key.  Just tossed it in a .env and called it a day.

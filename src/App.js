@@ -11,6 +11,7 @@ import ThankYou from "./components/ThankYou";
 function App() {
 //register swiper
 register();
+console.log(process.env.REACT_APP_URL)
 
 const [rsvpShowing, setRsvpShowing]= useState(false)
 const [thankyouShowing, setThankyouShowing]=useState({showing:false, status:null})

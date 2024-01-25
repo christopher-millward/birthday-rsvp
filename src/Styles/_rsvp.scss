@@ -13,6 +13,7 @@
 }
 
 #exit{
+    color:black;
     background-color: transparent;
     font-family: quicksand;
     font-weight: 900;
@@ -64,11 +65,12 @@ form{
 }
 
 .formSubmit{
-    width:33vw;
+    min-width:33vw;
     height:50px;
     margin:5px;
 
     background-color: rgba(230, 230, 230, 0.8);
+    color:black;
 
     font-family: playfair;
     font-size: 22px;
